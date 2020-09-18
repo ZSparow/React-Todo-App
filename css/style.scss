@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+    padding-top: 30px;
+}
+.list{
+    border-top: 2px dashed red;
+    margin-top: 40px;
+    &-item{
+        margin-top: 30px;
+    }
+}
+
+.flex-container{
+
+    position: relative;
+    display: flex;
+    padding:20px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+
+
+
+
+    input ,p{
+        flex:5;
+        border:none;
+        font-size: inherit;
+    }
+    button{
+        position: absolute;
+        right: 10px;
+        bottom: -30%;
+        font-size: inherit;
+        font-weight: bold;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+
+        .delete_icon{
+            width:25px;
+        }
+
+    
+    }
+}
