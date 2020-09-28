@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 .container {
@@ -31,6 +32,10 @@
     border: none;
     font-size: inherit;
     outline: none;
+    width: 100%;
+    @media only screen and (max-width: 400px) {
+      font-size: 16px;
+    }
   }
   button {
     position: absolute;

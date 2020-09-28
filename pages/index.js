@@ -4,10 +4,12 @@ const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
   const enterRef = useRef(null);
+
   useEffect(() => {
     let localData = localStorage.getItem("todos");
-
-    setTodos(JSON.parse(localData));
+    if (localData) {
+      setTodos(JSON.parse(localData));
+    }
   }, []);
 
   const handlChange = (e) => {
